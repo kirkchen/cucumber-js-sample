@@ -28,5 +28,21 @@ describe('Calculator', function() {
                 result.should.equal(80);
             });
         });
+
+        describe('if member\'s level is VIP, get 20 discount', function() {
+            it('should return 70 if total price is 90 and member\'s level is VIP', function() {
+                var result = calculator.getDiscountPrice(90, 'VIP');
+
+                result.should.equal(70);
+            });
+        });
+
+        describe('if member\'s level is NORMAL, get 20 discount', function() {
+            it('should return 80 if total price is 90 and member\'s level is NORMAL', function() {
+                var result = calculator.getDiscountPrice(90, 'Normal');
+
+                result.should.equal(80);
+            });
+        });
     });
 });
