@@ -8,8 +8,12 @@ module.exports = function() {
         this.totalPrice = parseInt(totalPrice);
     });
 
+    this.Given(/^顧客會員等級是 "([^"]*)"$/, function(memberLevel) {
+        this.memberLevel = memberLevel;
+    });
+
     this.When(/^計算折扣後金額$/, function() {
-        this.result = calculator.getDiscountPrice(this.totalPrice);
+        this.result = calculator.getDiscountPrice(this.totalPrice, this.memberLevel);
     });
 
     this.Then(/^折扣後金額應該為 "([^"]*)" 元$/, function(result) {

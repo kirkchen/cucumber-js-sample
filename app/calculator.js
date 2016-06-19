@@ -1,12 +1,20 @@
 function calculator() {
     this.getDiscountPrice = function(totalPrice, memberLevel, couponCode) {
+        var finalPrice = totalPrice;
+
         if (totalPrice >= 200) {
-          return totalPrice * 0.8;
+            finalPrice = totalPrice * 0.8;
         } else if (totalPrice >= 100 && totalPrice < 200) {
-          return totalPrice * 0.9
+            finalPrice = totalPrice * 0.9
         }
 
-        return totalPrice;
+        if (memberLevel === 'VIP') {
+            finalPrice = finalPrice - 20;
+        } else if (memberLevel === 'Normal') {
+            finalPrice = finalPrice - 10;
+        }    
+
+        return finalPrice;
     }
 }
 
