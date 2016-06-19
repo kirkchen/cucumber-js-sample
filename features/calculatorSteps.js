@@ -12,8 +12,12 @@ module.exports = function() {
         this.memberLevel = memberLevel;
     });
 
+    this.Given(/^使用折價券 "([^"]*)"$/, function(couponCode) {
+        this.couponCode = couponCode;
+    });
+
     this.When(/^計算折扣後金額$/, function() {
-        this.result = calculator.getDiscountPrice(this.totalPrice, this.memberLevel);
+        this.result = calculator.getDiscountPrice(this.totalPrice, this.memberLevel, this.couponCode);
     });
 
     this.Then(/^折扣後金額應該為 "([^"]*)" 元$/, function(result) {
