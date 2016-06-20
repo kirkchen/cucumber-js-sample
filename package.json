@@ -12,6 +12,11 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cucumber": "^1.0.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "jsdom": "^3.1.2"
   }
 }
