@@ -8,6 +8,5 @@ script:
 after_script:
   - codeclimate-test-reporter < ./coverage/lcov.info
 addons:
-  code_climate:
-    repo_token:
-      secure: "G4FYuU1HcDpIc6rJRwTCpsNncakiKQBRF4qhZgaVoTHqdLQc8Z5qACVTZ9G6B9npJJ4Tls73EBpg6LLpk5ZALzne8TRa8WKrr79hVLFv+vsnDN4spWUCMci96bR8+FBlWfLpWeCKXvrItHuzTVJPHRR6YErX5EPE45chaycyPjoBpr3en5MNkFCl6gxVBjv9LcNgMyFw0QP6k/6bKUDfAQBpxMHq7oQwrjdF6OpI9AiFnC4qaH/Mm32E9YKfq/rDEVngDO7uO6HeUau5eRdTs0jjKg1QCVhNG42IELaG9P0zcRH/wz7EBUQk+OUGHY/TWjrRTzHRzYPL8bDvCTo1Mpm4aQIFsFl6tX4kr1gUyia+urmgE7vlhHEdSo068Y7FJvzkZrkbkvo+hoq85hmw43WK7A4OjdoJ2JREXiUuef4CTCAXCkb51i20lQHjleRDfGK9Y7NxMCbBbdBjgQTBuSMtJZSoGfEHtaUc9rqBj3rV4T+EoWQvUXohJBld9bL7DOG0ybOLsNbsQh6U3nXKki5x+afcNrY0GSvH9BdUW7VilEa4R3adAY44iv5T3Iv4sjpkkoNdjN9XdMVuG1FCPJ+yau1xWrzBEoKgl0tXJv7uElfFF/lJmLHQ/belamrmpF7MOwbOrk/F4vabY37aoRwXfr6sh/MoM0lJIN253+E="
+    code_climate:
+        repo_token: cc64368b770e955cbb29c78969728c4db2f34f9064c0ae1246e93aea3341c095
