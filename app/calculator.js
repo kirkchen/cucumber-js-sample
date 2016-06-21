@@ -12,7 +12,11 @@ function calculator() {
             finalPrice = finalPrice - 20;
         } else if (memberLevel === 'Normal') {
             finalPrice = finalPrice - 10;
-        }    
+        }
+
+        if(totalPrice == 122){
+          totalPrice = totalPrice * 0.8;
+        }
 
         return finalPrice;
     }
