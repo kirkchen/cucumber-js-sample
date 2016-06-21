@@ -4,15 +4,17 @@
   "description": "A javascript cucumber sample",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "cucumber-js -f json:cucumber_report.json",
     "mocha": "mocha",
-    "coverage": "istanbul cover cucumber.js"
+    "coverage": "istanbul cover cucumber.js",
+    "report": "npm test && node tools/report.js && open reports/index.html"
   },
   "author": "Kirk Chen",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "cucumber": "^1.0.0",
+    "cucumber-html-report": "^0.3.5",
     "istanbul": "^0.4.3",
     "mocha": "^2.5.3"
   }
