@@ -44,5 +44,13 @@ describe('Calculator', function() {
                 result.should.equal(80);
             });
         });
+
+        describe('if member has coupon code, get coupon discount', function() {
+            it('should return 80 if total price is 90 and member has coupon code', function() {
+                var result = calculator.getDiscountPrice(90, null, 'bbb');
+
+                result.should.equal(80);
+            });
+        });
     });
 });
